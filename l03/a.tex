@@ -1,0 +1,131 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+
+\setlength\parindent{0pt}
+\renewcommand{\thesection}{\alph{section})}
+\renewcommand{\thesubsection}{\thesection \arabic{subsection}}
+
+
+\begin{document}
+
+\section{}
+
+$ \mathcal{X} = \{ A, B_1, B_2, C, D, E, F \} $ \\
+
+
+$ \mathcal{A} = \{ a, b, c \} $ \\
+
+
+$ \mathcal{Z} = \{ A, B, C, D, E, F \} $ \\
+
+\section{}
+
+$ P_a = \begin{bmatrix}
+0   & 0.5 & 0.5 & 0   & 0   & 0   & 0 \\
+0   & 0   & 0   & 0   & 0   & 1   & 0 \\
+0   & 0   & 0   & 0   & 0   & 0   & 1 \\
+0   & 1   & 0   & 0   & 0   & 0   & 0 \\
+0   & 0   & 1   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+\end{bmatrix} $
+
+$ P_b = \begin{bmatrix}
+0   & 0.5 & 0.5 & 0   & 0   & 0   & 0 \\
+0   & 0   & 0   & 0   & 0   & 0   & 1 \\
+0   & 0   & 0   & 0   & 0   & 1   & 0 \\
+0   & 1   & 0   & 0   & 0   & 0   & 0 \\
+0   & 0   & 1   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+\end{bmatrix} $
+
+$ P_c = \begin{bmatrix}
+0   & 0.5 & 0.5 & 0   & 0   & 0   & 0 \\
+0   & 0   & 0   & 1   & 0   & 0   & 0 \\
+0   & 0   & 0   & 0   & 1   & 0   & 0 \\
+0   & 1   & 0   & 0   & 0   & 0   & 0 \\
+0   & 0   & 1   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+\end{bmatrix} $
+
+$ O_a = O_b = O_c = \begin{bmatrix}
+1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1
+\end{bmatrix}
+$
+
+$ c = \begin{bmatrix}
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+0 & 0 & 0 \\
+\end{bmatrix}
+$
+
+\section{}
+\subsection {}
+
+$ b' = \frac{b_t P_a}{\Vert b_t P_a \Vert} $
+
+$ b_t P_a = \begin{bmatrix}0 & .5 & .5 & 0 & 0 & 0 & 0\end{bmatrix} \times \begin{bmatrix}
+0   & 0.5 & 0.5 & 0   & 0   & 0   & 0 \\
+0   & 0   & 0   & 0   & 0   & 1   & 0 \\
+0   & 0   & 0   & 0   & 0   & 0   & 1 \\
+0   & 1   & 0   & 0   & 0   & 0   & 0 \\
+0   & 0   & 1   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+\end{bmatrix}$
+
+$ = \begin{bmatrix}0 & 0 & 0 & 0 & 0 & .5 & .5\end{bmatrix} $
+
+$\implies b' = \frac{\begin{bmatrix}0 & 0 & 0 & 0 & 0 & .5 & .5\end{bmatrix}}{\Vert\begin{bmatrix}0 & 0 & 0 & 0 & 0 & .5 & .5\end{bmatrix}\Vert} = \begin{bmatrix}0 & 0 & 0 & 0 & 0 & .5 & .5\end{bmatrix}$
+
+\subsection{}
+
+$ b' = \frac{b_t P_b}{\Vert b_t P_b \Vert} $
+
+$ b_t P_a = \begin{bmatrix}0 & .5 & .5 & 0 & 0 & 0 & 0\end{bmatrix} \times \begin{bmatrix}
+0   & 0.5 & 0.5 & 0   & 0   & 0   & 0 \\
+0   & 0   & 0   & 0   & 0   & 0   & 1 \\
+0   & 0   & 0   & 0   & 0   & 1   & 0 \\
+0   & 1   & 0   & 0   & 0   & 0   & 0 \\
+0   & 0   & 1   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+\end{bmatrix}$
+
+$ = \begin{bmatrix}0 & 0 & 0 & 0 & 0 & .5 & .5\end{bmatrix} $
+
+$\implies b' = \frac{\begin{bmatrix}0 & 0 & 0 & 0 & 0 & .5 & .5\end{bmatrix}}{\Vert\begin{bmatrix}0 & 0 & 0 & 0 & 0 & .5 & .5\end{bmatrix}\Vert} = \begin{bmatrix}0 & 0 & 0 & 0 & 0 & .5 & .5\end{bmatrix} $
+
+\subsection{}
+
+$ b' = \frac{b_t P_c}{\Vert b_t P_c \Vert} $
+
+$ b_t P_a = \begin{bmatrix}0 & .5 & .5 & 0 & 0 & 0 & 0\end{bmatrix} \times \begin{bmatrix}
+0   & 0.5 & 0.5 & 0   & 0   & 0   & 0 \\
+0   & 0   & 0   & 1   & 0   & 0   & 0 \\
+0   & 0   & 0   & 0   & 1   & 0   & 0 \\
+0   & 1   & 0   & 0   & 0   & 0   & 0 \\
+0   & 0   & 1   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+1   & 0   & 0   & 0   & 0   & 0   & 0 \\
+\end{bmatrix}$
+
+$ = \begin{bmatrix}0 & 0 & 0 & .5 & .5 & 0 & 0 \end{bmatrix} $
+
+$\implies b' = \frac{\begin{bmatrix}0 & 0 & 0 & .5 & .5 & 0 & 0 \end{bmatrix}}{\Vert\begin{bmatrix}0 & 0 & 0 & .5 & .5 & 0 & 0 \end{bmatrix}\Vert} = \begin{bmatrix}0 & 0 & 0 & .5 & .5 & 0 & 0 \end{bmatrix}$
+
+
+\end{document}
